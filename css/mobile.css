@@ -1,0 +1,51 @@
+html {
+  background-color: #FFFBFF;
+  font-family: arial, sans-serif;
+}
+
+nav,
+#skills,
+#portfolio {
+  display: none;
+}
+
+.bottom-wrapper {
+  display: block;
+  margin: 80px;
+}
+
+.title {
+  margin: 5px;;
+  text-align: center;
+}
+
+.title--big {
+  font-size: 50px;
+}
+
+.menu {
+  list-style-type: none;
+  margin: 50px;
+  padding: 0;
+  text-align: center;
+}
+
+.menu__list {
+  display: inline-block;
+  margin: 10px;
+  text-align: center;
+  width: 20%;
+}
+
+.text {
+  align-self: center;
+  color: #333;
+  font-size: 20px;
+  margin: 35px 40px;
+  letter-spacing: 1px;
+  line-height: 38px;
+}
+
+.copyright {
+  text-align: center;
+}

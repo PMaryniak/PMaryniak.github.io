@@ -1,0 +1,320 @@
+@import url('reset.css');
+
+html {
+  background-color: #FFFBFF;
+  font-family: 'Montserrat', sans-serif;
+}
+
+/*---------------------------------
+Layouts
+---------------------------------*/
+
+.bottom-wrapper {
+  bottom: 0;
+  position: absolute;
+}
+
+.box-wrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+.contact-wrapper {
+  background-color: #333;
+  flex: 1;
+  padding-bottom: 3.75em;
+}
+
+.home-wrapper {
+  background-color: #333333;
+  height: 100vh;
+  margin-bottom: 2em;
+  overflow: hidden;
+  position: relative;
+}
+
+/*---------------------------------
+List Container
+---------------------------------*/
+
+.menu {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  list-style-type: none;
+}
+
+.menu--nav {
+  display: none;
+}
+
+.menu--center {
+  align-items: center;
+  justify-content: center;
+}
+
+.menu--web-icons {
+  align-items: center;
+  justify-content: space-around;
+}
+
+
+/*---------------------------------
+links In Lists
+---------------------------------*/
+
+.menu__link {
+  color: #333;
+  display: block;
+}
+
+.menu__link--nav {
+  font-size: calc(.35em + 1vw);
+  margin: 2.5em 3.5em 0em 0em;
+  text-decoration: none;
+}
+
+.menu__link--nav:hover {
+  color: #2691D9;
+}
+
+
+/*---------------------------------
+list
+---------------------------------*/
+
+.menu__list {
+  list-style-type: none;
+  margin: 1.25em 1.75em 1.25em 1.75em;
+  width: 7em;
+}
+
+.menu__list--xtra-width {
+  margin: 3.5em 6em 3.5em 6em;
+  min-width: 3.75em;
+  width: 9em;
+}
+
+.menu_list--website {
+  background-color: #1B6699;
+  margin: .5em;
+  padding: .5em;
+  width: 5.5em;
+}
+
+/*---------------------------------
+Typography
+---------------------------------*/
+
+.text {
+  align-self: center;
+  color: #FFFBFF;
+  font-size: calc(1em + .2vw);
+  margin: .5em 2.7em;
+  letter-spacing: 1px;
+  line-height: 2.1em;
+}
+
+.copyright {
+  background-color: #333;
+  color: #FFFBFF;
+  padding: 1em 0;
+  text-align: center;
+  vertical-align: middle;
+}
+
+.title {
+  color: #FFFBFF;
+  font-size: calc(1.5em + 1vw);
+  font-weight: 600;
+  margin: 2em;
+  text-align: center;
+}
+
+.title--big {
+  font-size: calc(1.5em + 11vw);
+  margin: -15px 0 0 0;
+  text-align: left;
+}
+
+.title--black {
+  color: #333;
+}
+
+.title--blue {
+  color: #2691d9;
+}
+
+/*---------------------------------
+SVG
+---------------------------------*/
+
+.icon {
+  fill: #333;
+  -webkit-transition: all .3s;
+  transition: all .3s;
+}
+
+.icon:hover {
+  transform: scale(1.15);
+}
+
+.icon--contact {
+  border-radius: 100%;
+  display: block;
+  fill: #FFFBFF;
+  height: 100%;
+  width: 100%;
+}
+
+.icon--contact:hover {
+  background-color: #2691D9;
+}
+
+.icon__path {
+  fill: none;
+}
+
+#html:hover {
+  fill: #E44D26;
+}
+
+#css3:hover {
+  fill: #264DE4;
+}
+
+#javascript:hover {
+  fill: #F7DF1E;
+}
+
+#git:hover {
+  fill: #F34F29;
+}
+
+#jquery:hover {
+  fill: #0769AD;
+}
+
+#wp:hover {
+  fill: #494949;
+}
+
+/*---------------------------------
+Images & Captions
+---------------------------------*/
+
+.image {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  border: grey solid 2px;
+  display: inherit;
+  flex: 1;
+  height: 550px;
+  transition: all .5s ease-in-out;
+  -webkit-filter: grayscale(100%);
+  filter: gray;
+}
+
+.image:hover {
+  flex: 2;
+  filter: none;
+}
+
+.image__caption-container {
+  align-self: flex-end;
+  background-color: rgba(23,117,209,0.7);
+  color: #FFFBFF;
+  opacity: 0;
+  padding: .2em;
+  text-align: center;
+  transition: all .7s ease-in-out;
+  visibility: hidden;
+  width: 100%;
+}
+
+.image:hover .image__caption-container{
+  opacity: 1;
+  visibility: visible;
+}
+
+.image__caption {
+  font-size: calc(.7em + .4vw);
+  font-weight: 700;
+  margin: 1.5em;
+  text-align: center;
+}
+
+#seipc {
+  background-image: url("../img/Seipc.png");
+}
+
+#open {
+  background-image: url("../img/OpenHouse.png");
+}
+
+#fx {
+  background-image: url("../img/FX.png");
+}
+
+/*---------------------------------
+Desktop resolution
+---------------------------------*/
+
+
+@media (min-width: 820px) {
+
+  .home-wrapper {
+    background: linear-gradient(90deg, #333 65%, #FFFBFF 35%);
+  }
+
+  .box-wrapper{
+    flex-direction: row;
+  }
+
+  .menu--nav {
+    display: flex;
+  }
+
+  .menu__list {
+    min-width: 3.75em;
+    width: 9em;
+  }
+
+  .menu__list--more-width {
+    width: 11em;
+  }
+
+  .menu_list--website {
+    background-color: #1B6699;
+    margin: .75em;
+    padding: 1em;
+    width: 6.5em;
+  }
+
+  .image__caption-container {
+    align-self: flex-end;
+    background-color: rgba(23,117,209,0.7);
+    color: #FFFBFF;
+    opacity: 0;
+    padding: 1.5em;
+    text-align: center;
+    transition: all .7s ease-in-out;
+    visibility: hidden;
+    width: 100%;
+  }
+
+  .image__caption {
+    font-weight: 700;
+    margin: 3em;
+    text-align: center;
+  }
+
+  .icon:hover {
+    transform: scale(1.25);
+  }
+
+  .text {
+    margin: .5em 4.9em;
+  }
+}
