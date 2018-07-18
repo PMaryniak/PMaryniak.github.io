@@ -27,7 +27,7 @@ Layouts
 
 .home-wrapper {
   background-color: #333333;
-  height: 100vh;
+  height: 99vh;
   margin-bottom: 2em;
   overflow: hidden;
   position: relative;
@@ -246,15 +246,15 @@ Images & Captions
 }
 
 #seipc {
-  background-image: url("../img/Seipc.png");
+  background-image: url("../img/Seipc.PNG");
 }
 
 #open {
-  background-image: url("../img/OpenHouse.png");
+  background-image: url("../img/OpenHouse.PNG");
 }
 
 #fx {
-  background-image: url("../img/FX.png");
+  background-image: url("../img/FX.PNG");
 }
 
 /*---------------------------------
@@ -266,6 +266,7 @@ Desktop resolution
 
   .home-wrapper {
     background: linear-gradient(90deg, #333 65%, #FFFBFF 35%);
+    height: 100vh;
   }
 
   .box-wrapper{
