@@ -27,7 +27,7 @@ Layouts
 
 .home-wrapper {
   background-color: #333333;
-  height: 99vh;
+  height: 100vh;
   margin-bottom: 2em;
   overflow: hidden;
   position: relative;
@@ -313,6 +313,9 @@ Desktop resolution
 
   .icon:hover {
     transform: scale(1.25);
+  }
+  .icon--contact:hover {
+    background-color: #2691D9;
   }
 
   .text {
